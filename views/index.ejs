@@ -14,41 +14,38 @@
 
 <body>
 <!-- Image and text -->
-<nav class="navbar navbar-light bg-dark">
-    <a class="navbar-brand" href="#">
+<nav class="navbar navbar-light bg-dark ">
+    <a class="navbar-brand text-white" href="#">
       <img src="/image/logo.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
-      Exercice Node jS
+      Exercice ejs
     </a>
 </nav>
-
 <!--Partie html de l'éxercice-->
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
-            <ul>
-                <!--boucle la liste reçu de app.js-->
-                <% liste.forEach(function(datas){ %>
-                    <li class="test">
-                        <!--affiche le nom des compétences-->
-                        <%= datas.nom  %>  
+        <div class="col-sm-12 text-center">
+            <div class="list-group mt-5 "></div>
+            <!--boucle la liste reçu de app.js-->
+            <% liste.forEach(function(datas){ %>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                    <!--affiche le nom des compétences-->
+                    <%= datas.nom  %>
                         <!--boucle qui affiche le nombre d'étoiles qui correspond au nombre datas.niveau-->
                         <% for(var i=0; i<datas.niveau; i++) {%>
                             *
-                          <% } %>
-                    </li>
-                    <% }); %>
+                            <% } %>
+                </a>
+                <% }); %>
 
-                    
-
-            </ul>
-
-
-            <div id="pasfacile">
-
-            </div>
         </div>
+
+
     </div>
+
+
 </div>
+</div>
+
 
 </script>
     <!-- Optional JavaScript -->
