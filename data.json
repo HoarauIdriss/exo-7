@@ -1,0 +1,26 @@
+[
+    {
+        "nom":"Javascript",
+        "niveau": 2
+    },
+    {
+        "nom":"HTML",
+        "niveau": 6
+    },
+    {
+        "nom":"CSS",
+        "niveau": 6
+    },
+    {
+        "nom":"NodeJS",
+        "niveau": 3
+    },
+    {
+        "nom":"bootstrap",
+        "niveau": 3
+    },
+    {
+        "nom":"jquery",
+        "niveau": 3
+    }
+]

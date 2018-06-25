@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="/image/logo.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
+      Exercice Node jS
+    </a>
+</nav>
+
+<!--Partie html de l'éxercice-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <ul>
+                <!--boucle la liste reçu de app.js-->
+                <% liste.forEach(function(datas){ %>
+                    <li class="test">
+                        <!--affiche le nom des compétences-->
+                        <%= datas.nom  %>  
+                        <!--boucle qui affiche le nombre d'étoiles qui correspond au nombre datas.niveau-->
+                        <% for(var i=0; i<datas.niveau; i++) {%>
+                            *
+                          <% } %>
+                    </li>
+                    <% }); %>
+
+                    
+
+            </ul>
+
+
+            <div id="pasfacile">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="balbla.js"></script>
+</body>
+
+</html>
